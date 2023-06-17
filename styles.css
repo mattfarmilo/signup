@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "norse";
+  src: url(./resources/norse-bold-webfont.woff2) format("woff2"),
+    url(./resources/norse-bold-webfont.woff) format("woff");
+}
+
+body {
+  display: flex;
+}
+
+.hero {
+  background-image: url(./resources/halie-west-25xggax4bSA-unsplash.jpg);
+}

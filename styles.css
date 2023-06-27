@@ -134,6 +134,10 @@ input:focus {
   outline: none;
 }
 
+.hide {
+  display: none;
+}
+
 #noMatch {
   color: red;
   font-size: 10px;

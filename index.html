@@ -44,7 +44,12 @@
         </div>
         <div>
           <label for="password">PASSWORD
-            <input type="password" name="password" id="password" class="error">
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="6"
+              class="error">
             <p id="noMatch">*passwords do not match</p>
           </label>
           <label for="confPassword">CONFIRM PASSWORD
@@ -60,4 +65,5 @@
     </div>
   </div>
 </body>
+<script src="./script.js"></script>
 </html>

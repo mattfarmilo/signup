@@ -17,30 +17,46 @@
     </div>
   </div>
   <div class="right">
-    <div>
-      This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up now to get started.
-      You know you want to.
+    <div class="top">
+      <div>
+        <p class="text">This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams.<br>Sign up <span>now</span> to get started.</p>
+        <p class="text">You <span>know</span> you want to.</p>
+      </div>
     </div>
-    <div>
-      Let's do this!
-      <form action="">
-        <label for="firstName">First name</label>
-        <input type="text" name="firstName" id="firstName">
-        <label for="lastName">Last name</label>
-        <input type="text" name="lastName" id="lastName">
-        <label for="email">Email</label>
-        <input type="text" name="email" id="email">
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        <label for="confPassword">Confirm Password</label>
-        <input type="password" name="confPassword" id="confPassword">
+    <div class="middle">
+      <p class="text">Let's do this!</p>
+      <form method="post" action="" id="signup">
+        <div>
+          <label for="firstName">FIRST NAME
+            <input type="text" name="firstName" id="firstName">
+          </label>
+          <label for="lastName">LAST NAME
+            <input type="text" name="lastName" id="lastName">
+          </label>
+        </div>
+        <div>
+          <label for="email">EMAIL
+            <input type="email" name="email" id="email">
+          </label>
+          <label for="phone">PHONE NUMBER
+            <input type="tel" name="phone" id="phone">
+          </label>
+        </div>
+        <div>
+          <label for="password">PASSWORD
+            <input type="password" name="password" id="password" class="error">
+            <p id="noMatch">*passwords do not match</p>
+          </label>
+          <label for="confPassword">CONFIRM PASSWORD
+            <input type="password" name="confPassword" id="confPassword" class="error">
+          </label>
+        </div>
+        
       </form>
     </div>
-    <div>
-      <button type="submit">Create Account</button>
-      Already have an account? <a href="">Log in</a>
+    <div class="bottom">
+      <button type="submit" form="signup">Create Account</button>
+      <p class="login">Already have an account? <a href="">Log in</a></p>
     </div>
   </div>
 </body>

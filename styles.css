@@ -4,8 +4,18 @@
     url(./resources/norse-bold-webfont.woff) format("woff");
 }
 
+:root {
+  box-sizing: border-box;
+  --bg-color: rgb(240, 240, 240);
+  --top-height: 33vh;
+  --middle-height: 240px;
+  --text-font: Arial, Helvetica, sans-serif;
+  --login-col: #596D48;
+}
+
 body {
   display: flex;
+  margin: 0;
 }
 
 .left {
@@ -18,6 +28,7 @@ body {
 
 .right {
   flex: 1 1 67vw;
+  height: 100vh;
 }
 
 .background {
@@ -40,14 +51,123 @@ body {
   margin-bottom: 0;
   margin-top: auto;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   width: 100%;
   text-align: center;
 }
 
 .credit,
-.credit>a {
-  font-family: Arial, Helvetica, sans-serif;
+.credit > a {
+  font-family: var(--text-font);
   color: white;
   font-size: 10px;
+}
+
+.top {
+  background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
+  padding-left: 30px;
+  position: relative;
+  height: var(--top-height);
+}
+
+.text {
+  width: 70%;
+  font-family: var(--text-font);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.top > div {
+  position: absolute;
+  bottom: 45px;
+}
+
+span {
+  font-style: italic;
+}
+
+.middle {
+  padding-left: 30px;
+  height: var(--middle-height);
+}
+
+.bottom {
+  background-color: var(--bg-color);
+  padding-left: 30px;
+  height: calc(100vh - var(--top-height) - var(--middle-height));
+  display: block;
+  padding-top: 20px;
+}
+
+form {
+  width: 100%;
+}
+
+form > div {
+  display: flex;
+  width: 100%;
+}
+
+label {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 10px;
+}
+
+input {
+  display: block;
+  margin-bottom: 20px;
+  margin-right: 60px;
+  margin-top: 5px;
+  border: 1px solid #e5e7eb;
+  height: 23px;
+  border-radius: 3px;
+  }
+
+input:focus {
+  border-color: blue;
+  outline: none;
+}
+
+.error {
+  border-color: red;
+  outline: none;
+}
+
+#noMatch {
+  color: red;
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  bottom: 15px;
+}
+
+.login {
+  font-family: var(--text-font);
+  font-size: 15px;
+}
+
+p > a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--login-col);
+}
+
+p > a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: var(--text-font);
+  font-weight: bold;
+  font-size: 17px;
+  padding: 10px 30px;
+  border-radius: 7px;
+  color: white;
+  background-color: var(--login-col);
+}
+
+button:hover {
+  cursor: pointer;
 }
